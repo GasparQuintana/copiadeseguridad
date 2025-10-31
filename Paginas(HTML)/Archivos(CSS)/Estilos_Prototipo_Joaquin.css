@@ -1,0 +1,185 @@
+p, h1, h2, h3, li, a{
+    color:gold;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+ul{
+    list-style: none;
+}
+
+body {
+    background-color: #001a66;
+    margin: 0;
+}
+
+#menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 160px;
+  height: 100vh;
+  background-color: crimson;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 15px;
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.4);
+}
+
+#menu img {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 20px;
+}
+
+#menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  text-align: center;
+}
+
+#menu li {
+  margin: 40px 0;
+}
+
+#menu a {
+  text-decoration: none;
+  color: yellow;
+  display: block;
+  transition: color 0.3s ease;
+}
+
+#menu a:hover {
+  color: white;
+}
+
+#logo {
+    display: inline; float: right;
+}
+
+#Contenido {
+
+  margin-left: 200px;
+  padding: 30px;
+  max-width: 1000px;
+  margin-bottom: 30px;
+}
+
+iframe {
+  border-radius: 10px;
+}
+
+#Contenido img {
+    border-radius: 20px;
+}
+
+#descripcion{
+    color: white;
+}
+
+#Contenido ul {
+  columns: 2;
+  margin-top: 20px;
+}
+
+#contenedor{
+  height: 500px;
+  width: 1000px;
+  overflow: hidden;
+}
+#contenedor_comics{
+  height: 240px;
+  width: 360px;
+  overflow: hidden;
+}
+.itemcarrusel{
+  height: 100%;
+  position: relative;
+}
+.tarjetacarrusel{
+  height: 100%;
+}
+.tarjetacarrusel img{
+  width: 100%;
+  height: 90%;
+}
+
+.flechacarrusel{
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+justify-content: space-between;
+ 
+}
+.flechacarrusel i{
+font-size: 100px;
+background-color: crimson;
+border-radius: 20px;
+
+}
+.flechacarrusel a{
+  text-decoration: none;
+  
+}
+
+#foot{
+  text-align: center;
+align-items: center;
+  bottom: 0;
+width: 100%;
+height: 10%;
+background-color: rgb(4, 4, 65);
+
+
+
+}
+
+#nav{
+  width: 100%;
+  height: 100%;
+background-color: crimson;
+border-radius: 10px;
+text-align: center;
+display: flex;
+flex-direction: column;
+align-items: center;
+border: 1px solid gold;
+margin-top: 20px;
+}
+#nav a{
+  text-decoration: none;
+border-radius: 5px;
+}
+#nav p{
+  background-color: #001a66;
+  border: 1px solid gold;
+  font-size: 35px;
+  letter-spacing: 5px;
+  border-radius: 1px;
+}
+#nav p:hover{
+    background-color: red;
+  transform: scale(1.1);
+}
+#menu li:hover{
+      background-color: #001a66;
+      border-radius: 10px;
+      width: 90%;
+      margin-left: 9px;
+  transform: scale(1.1);
+}
+#menu img:hover{
+ 
+  transform: scale(1.2);
+}
+#listado a{
+  text-decoration: none;
+}
+#listado img:hover{
+  filter: brightness(70%);
+}

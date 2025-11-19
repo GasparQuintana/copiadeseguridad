@@ -1,4 +1,4 @@
-p, h1, h2, h3, li, a{
+p, h1, h2, h3, li, a {
     color:gold;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
 }
@@ -50,7 +50,17 @@ body {
   display: block;
   transition: color 0.3s ease;
 }
-
+#menu li:hover{
+      background-color: #001a66;
+      border-radius: 10px;
+      width: 90%;
+      margin-left: 9px;
+  transform: scale(1.1);
+}
+#menu img:hover{
+ 
+  transform: scale(1.2);
+}
 #menu a:hover {
   color: white;
 }
@@ -89,11 +99,13 @@ iframe {
   width: 1000px;
   overflow: hidden;
 }
+
 #contenedor_comics{
-  height: 240px;
-  width: 360px;
+  height: 720px;
+  width: 480px;
   overflow: hidden;
 }
+
 .itemcarrusel{
   height: 100%;
   position: relative;
@@ -126,7 +138,9 @@ border-radius: 20px;
   text-decoration: none;
   
 }
-
+.flechacarrusel a:hover{
+  filter: brightness(70%);
+}
 #foot{
   text-align: center;
 align-items: center;
@@ -134,8 +148,6 @@ align-items: center;
 width: 100%;
 height: 10%;
 background-color: rgb(4, 4, 65);
-
-
 
 }
 
@@ -182,4 +194,79 @@ border-radius: 5px;
 }
 #listado img:hover{
   filter: brightness(70%);
+}
+
+#ff1{
+  font-size: large;
+  color: gold;
+   border: solid 3px gold;
+  border-radius: 5px;
+  background-color: crimson;
+  margin-bottom: 30px;
+  padding: 30px;
+}
+#ff1 input{
+  background-color: #001a66;
+  color: gold;
+  border: gold solid 2px;
+}
+#ff1 input::placeholder{
+  color: gold;
+  filter: brightness(70%);
+}
+#ff2{
+  font-size: large;
+  color: gold;
+   border: solid 3px gold;
+  border-radius: 5px;
+  background-color: crimson;
+  margin-bottom: 30px;
+  padding: 30px;
+}
+#ff2 textarea::placeholder{
+  color: gold;
+  filter: brightness(70%);
+}
+#ff2 textarea{
+background-color: #001a66;
+color: gold;
+border: 1px solid gold;
+
+}
+#ff2 input{
+  font-size: 30px;
+  background-color: #001a66;
+  color: gold;
+  border: gold solid 2px;
+}
+#ff2 input:hover{
+transform: scale(1.2);
+filter: brightness(70%);
+}
+#ff2 input:active{
+ filter: brightness(100%);
+  background-color: crimson;
+}
+
+.form__grupo {
+  position: relative;
+  margin-bottom: 15px;
+}
+
+.form__grupo-input {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.form__input-error {
+  color: gold;
+  font-size: 14px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.form__grupo-incorrecto .form__input-error {
+  opacity: 1;
+  color: yellow;
 }
